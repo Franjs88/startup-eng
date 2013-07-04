@@ -15,10 +15,11 @@ function esPrimo(i) {
 //Recibe el numero de primos que se desean calcular
 function calculaPrimos(numPrimos) {
 	var primos = [];
-	for(var i = 2; i < numPrimos; i++) {
+    var items = 0;
+	for(var i = 2;  items < numPrimos; i++) {
 		if(esPrimo(i)) {
 			primos.push(i);
-			--numPrimos;
+            items++;
 		}
 	}
 	return primos;
